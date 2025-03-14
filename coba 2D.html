@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALBUM</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+      }
+      .playlist-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .playlist-header img {
+        width: 200px;
+        height: 200px;
+      }
+      .playlist-header .details {
+        margin-left: 20px;
+      }
+      .playlist-header .details h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      .playlist-header .details p {
+        margin: 5px 0;
+      }
+      .playlist-header .details .buttons {
+        margin-top: 20px;
+      }
+      .playlist-header .details .buttons .btn {
+        margin-right: 10px;
+      }
+      .table-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .table-header .filter {
+        display: flex;
+        align-items: center;
+      }
+      .table-header .filter input {
+        margin-left: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+      .table-header .followers {
+        color: #b3b3b3;
+      }
+      .song-table {
+        margin-top: 20px;
+      }
+      .song-table .table-header-row {
+        border-bottom: 1px solid #333;
+      }
+      .song-table .table-header-row div {
+        color: #b3b3b3;
+      }
+      .song-table .table-row {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+      }
+      .song-table .table-row div {
+        flex: 1;
+      }
+      .song-table .table-row .song-title {
+        flex: 3;
+      }
+
+      .song-table .table-row .song-artist,
+      .song-table .table-row .song-album,
+      .song-table .table-row .song-added,
+      .song-table .table-row .song-time {
+        flex: 2;
+      }
+      .song-table .table-row i {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="playlist-header">
+        <img
+          src="https://media.cdnws.com/_i/209718/12452/2787/56/cha-eun-woo-entity-each-cover.jpeg"
+          alt="Your Discover Weekly album cover"
+        />
+        <div class="details">
+          <p class="grey-text text-lighten-1">ALBUM</p>
+          <h1>CHA EUN WOO</h1>
+        </div>
+      </div>
+      <div class="table-header">
+        <div class="filter">
+          <i class="material-icons grey-text text-lighten-1">search</i>
+          <input type="text" placeholder="Filter" />
+        </div>
+      </div>
+      <div class="song-table">
+        <div class="table-header-row row">
+          <div class="col s7 song-title">Song</div>
+          <div class="col s1">Time</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">Hey Hello</div>
+          <div class="col s1 song-time grey-text text-lighten-1">3:23</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">STAY</div>
+          <div class="col s1 song-time grey-text text-lighten-1">2:53</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">WHERE I AM</div>
+          <div class="col s1 song-time grey-text text-lighten-1">3:37</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">Love So Fine</div>
+          <div class="col s1 song-time grey-text text-lighten-1">3:09</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">Your The best</div>
+          <div class="col s1 song-time grey-text text-lighten-1">3:06</div>
+        </div>
+        <div class="table-row row">
+          <div class="col s3 song-title">Rainbow Falling</div>
+          <div class="col s1 song-time grey-text text-lighten-1">4:02</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
